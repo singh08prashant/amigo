@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login || Amigo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Raleway:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <div class="logo_container">
+          <div class="brand_logo"></div>
+          <div class="brand_name">
+            <a class="nav_link amigo" href="./index.html">AMIGO</a>
+          </div>
+        </div>
+        <!-- <div class="nav_bar_container">
+          <a class="nav_link" href="./index.html">Home</a>
+          <a class="nav_link" href="#about">About</a>
+          <a class="nav_link" href="#benefit">Benefits</a>
+        </div> -->
+        <div class="login_container">
+          <a class="nav_link login_btn" href="./login.html">Login</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="home_container">
+        <div class="login_card_container">
+          <div class="login_card">
+            <div class="login_form_container">
+              <h3 class="login_h3">Login</h3>
+              <form action="#" class="login_form">
+                <div class="login_detail_container">
+                  <div class="login_email_container">
+                    <label for="login-email">Email </label>
+                    <input
+                      type="email"
+                      name="loginEmail"
+                      placeholder="Enter your email address"
+                      class="input_box"
+                      required
+                    />
+                  </div>
+                  <div class="login_password_container">
+                    <label for="login-password">Password</label>
+                    <input
+                      type="password"
+                      name="loginPassword"
+                      placeholder="Enter your password"
+                      class="input_box"
+                      required
+                    />
+                  </div>
+                  <div class="login_btn_container">
+                    <button type="submit" class="btn login_btn">Login</button>
+                  </div>
+                </div>
+              </form>
+              <div class="register_link_container">
+                <p id="register-link">
+                  Don't have an account yet?
+                  <a href="#" id="active-registration-btn" class="register"
+                    >Register</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

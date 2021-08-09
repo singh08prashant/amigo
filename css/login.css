@@ -21,10 +21,12 @@
   align-items: center;
   justify-content: flex-end;
 }
-
+.nav_bar_container {
+  width: 30%;
+}
 .login_card_container {
   height: 75vh;
-  width: 30vw;
+  width: 25vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,4 +105,29 @@
 .register {
   text-decoration: none;
   color: darkturquoise;
+}
+#register-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 420px) {
+  .login_card_container {
+    width: 85vw;
+    height: 60vh;
+  }
+  .header_container {
+    line-height: 3rem;
+  }
+  .home_container {
+    height: 92vh;
+    width: 92vw;
+  }
+  .login_card_container {
+    width: 85vw;
+  }
+  .nav_bar_container {
+    width: 85vw;
+  }
 }

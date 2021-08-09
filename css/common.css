@@ -17,8 +17,10 @@ header {
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   font-family: var(--font-family-body);
-  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
   /* background-image: linear-gradient(to left, #5ee7df 0%, #b490ca 100%); */
 }
 
@@ -35,14 +37,18 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
 .nav_bar_container {
-  width: 30%;
+  width: 65%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
+.media_navbar {
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+}
 .nav_link {
   text-decoration: none;
   color: #fff;
@@ -51,7 +57,7 @@ body {
 
 .login_container,
 .logo_container {
-  width: 15%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,4 +78,25 @@ body {
 .login_btn:hover {
   background-color: #ffffffd7;
   color: #e0c3fc;
+}
+
+@media only screen and (max-width: 420px) {
+  .header_container {
+    flex-direction: column;
+    line-height: 2rem;
+  }
+
+  .media_navbar {
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .login_container {
+    width: 50%;
+  }
+
+  .login_btn {
+    height: 2.4rem;
+    width: 5.5rem;
+  }
 }

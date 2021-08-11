@@ -1,30 +1,25 @@
-:root {
-  /* Colors */
 
-  /* Fonts */
-  --font-family-body: "Poppins", sans-serif;
-  --font-family-heading: "Raleway", sans-serif;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .login_container {
   display: none;
+
 }
-.home_container {
-  width: 95vw;
+.parent-container {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background-color: #FF9D9D;
 }
 .nav_bar_container {
   width: 30%;
 }
 .login_card_container {
+  margin-top: 50px;
+  margin-left:  auto;
+  margin-right: auto;
+  margin-bottom: 40px;
   height: 75vh;
   width: 25vw;
   display: flex;
@@ -32,13 +27,7 @@
   justify-content: center;
   box-shadow: -3px -3px 5px hsla(0, 0%, 100%, 80%),
     3px 3px 15px rgba(0, 0%, 0%, 0.5);
-  background: linear-gradient(
-    to top,
-    hsl(48, 6%, 100%) 0%,
-    hsl(60, 6%, 96%) 31%,
-    hsl(40, 9%, 108%) 75%,
-    hsl(60, 4%, 96%) 100%
-  );
+  background: #FFC2C2;
   border-radius: 20px;
   opacity: 0.85;
 }
@@ -79,7 +68,7 @@
 
 .input_box {
   height: 2.5rem;
-  border: 1px solid lightgray;
+  border: 1px solid #FFC2C2;
   border-radius: 25px;
   padding-left: 1rem;
 }
@@ -93,18 +82,18 @@
 
 .login_btn {
   font-family: var(--font-family-heading);
-  border: 1px solid darkturquoise;
+  border: 1px solid #FF2E63;
   cursor: pointer;
 }
 
 .login_btn:hover {
-  background-color: darkturquoise;
-  color: #fff;
+  background-color: #FF2E63;
+  color: #FFC2C2;
 }
 
 .register {
   text-decoration: none;
-  color: darkturquoise;
+  color: #FF2E63;
 }
 #register-link {
   display: flex;

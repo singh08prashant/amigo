@@ -1,4 +1,4 @@
 # amigo
-Amigo: Your Second Self
+## Amigo: Your Second Self
 
 B.tech final year project.

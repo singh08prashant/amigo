@@ -3,8 +3,13 @@ body {
   color: #010A43;
 }
 
+.container-fluid{
+  padding: 3%
+}
+
 .home_container {
   background-color: #FFC2C2;
+  
 }
 
 .about_container {

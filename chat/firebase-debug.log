@@ -1,0 +1,104 @@
+[debug] [2022-02-09T10:02:50.679Z] ----------------------------------------------------------------------
+[debug] [2022-02-09T10:02:50.681Z] Command:       /usr/local/bin/firebase /home/singh08prashant/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2022-02-09T10:02:50.681Z] CLI Version:   8.2.0
+[debug] [2022-02-09T10:02:50.681Z] Platform:      linux
+[debug] [2022-02-09T10:02:50.681Z] Node Version:  v12.16.1
+[debug] [2022-02-09T10:02:50.681Z] Time:          Wed Feb 09 2022 15:32:50 GMT+0530 (India Standard Time)
+[debug] [2022-02-09T10:02:50.681Z] ----------------------------------------------------------------------
+[debug] [2022-02-09T10:02:50.681Z] 
+[debug] [2022-02-09T10:02:50.689Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-09T10:02:50.689Z] > authorizing via signed-in user
+[debug] [2022-02-09T10:02:50.689Z] [iam] checking project amigochat89 for permissions ["firebase.projects.get"]
+[debug] [2022-02-09T10:02:50.692Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/amigochat89:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-09T10:02:52.289Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 09 Feb 2022 10:02:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1390","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-09T10:02:52.295Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amigochat89  
+ 
+[debug] [2022-02-09T10:02:52.833Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 09 Feb 2022 10:02:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/home/singh08prashant/Desktop/amigo/chat'...
+[info] 
+[debug] [2022-02-09T10:02:52.841Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amigochat89/webApps/-/config  
+ 
+[debug] [2022-02-09T10:02:53.993Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 09 Feb 2022 10:02:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: ./public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2022-02-10T10:22:57.741Z] ----------------------------------------------------------------------
+[debug] [2022-02-10T10:22:57.743Z] Command:       /usr/local/bin/firebase /home/singh08prashant/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2022-02-10T10:22:57.743Z] CLI Version:   8.2.0
+[debug] [2022-02-10T10:22:57.743Z] Platform:      linux
+[debug] [2022-02-10T10:22:57.743Z] Node Version:  v12.16.1
+[debug] [2022-02-10T10:22:57.788Z] Time:          Thu Feb 10 2022 15:52:57 GMT+0530 (India Standard Time)
+[debug] [2022-02-10T10:22:57.789Z] ----------------------------------------------------------------------
+[debug] [2022-02-10T10:22:57.789Z] 
+[debug] [2022-02-10T10:22:57.867Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-10T10:22:57.868Z] > authorizing via signed-in user
+[debug] [2022-02-10T10:22:57.869Z] [iam] checking project amigochat89 for permissions ["firebase.projects.get"]
+[debug] [2022-02-10T10:22:57.875Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-10T10:22:57.876Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-10T10:22:58.108Z] <<< HTTP RESPONSE 200 {"date":"Thu, 10 Feb 2022 10:22:57 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-10T10:22:58.190Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/amigochat89:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-10T10:23:00.420Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:22:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1342","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-10T10:23:00.421Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amigochat89  
+ 
+[debug] [2022-02-10T10:23:01.006Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:23:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/home/singh08prashant/Desktop/amigo/chat'...
+[info] 
+[debug] [2022-02-10T10:23:01.012Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amigochat89/webApps/-/config  
+ 
+[debug] [2022-02-10T10:23:02.228Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:23:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: ./public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2022-02-10T10:27:31.723Z] ----------------------------------------------------------------------
+[debug] [2022-02-10T10:27:31.724Z] Command:       /usr/local/bin/firebase /home/singh08prashant/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2022-02-10T10:27:31.724Z] CLI Version:   8.2.0
+[debug] [2022-02-10T10:27:31.724Z] Platform:      linux
+[debug] [2022-02-10T10:27:31.724Z] Node Version:  v12.16.1
+[debug] [2022-02-10T10:27:31.725Z] Time:          Thu Feb 10 2022 15:57:31 GMT+0530 (India Standard Time)
+[debug] [2022-02-10T10:27:31.725Z] ----------------------------------------------------------------------
+[debug] [2022-02-10T10:27:31.725Z] 
+[debug] [2022-02-10T10:27:31.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-10T10:27:31.730Z] > authorizing via signed-in user
+[debug] [2022-02-10T10:27:31.730Z] [iam] checking project amigochat89 for permissions ["firebase.projects.get"]
+[debug] [2022-02-10T10:27:31.732Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/amigochat89:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-10T10:27:33.226Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:27:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1356","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-10T10:27:33.228Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amigochat89  
+ 
+[debug] [2022-02-10T10:27:33.692Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:27:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/home/singh08prashant/Desktop/amigo/chat'...
+[info] 
+[debug] [2022-02-10T10:27:33.696Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amigochat89/webApps/-/config  
+ 
+[debug] [2022-02-10T10:27:34.923Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:27:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: ./public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2022-02-10T10:30:05.081Z] ----------------------------------------------------------------------
+[debug] [2022-02-10T10:30:05.082Z] Command:       /usr/local/bin/firebase /home/singh08prashant/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2022-02-10T10:30:05.082Z] CLI Version:   8.2.0
+[debug] [2022-02-10T10:30:05.082Z] Platform:      linux
+[debug] [2022-02-10T10:30:05.082Z] Node Version:  v12.16.1
+[debug] [2022-02-10T10:30:05.083Z] Time:          Thu Feb 10 2022 16:00:05 GMT+0530 (India Standard Time)
+[debug] [2022-02-10T10:30:05.083Z] ----------------------------------------------------------------------
+[debug] [2022-02-10T10:30:05.083Z] 
+[debug] [2022-02-10T10:30:05.088Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-10T10:30:05.088Z] > authorizing via signed-in user
+[debug] [2022-02-10T10:30:05.088Z] [iam] checking project amigochat89 for permissions ["firebase.projects.get"]
+[debug] [2022-02-10T10:30:05.090Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/amigochat89:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-10T10:30:07.001Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:30:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1363","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-10T10:30:07.003Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amigochat89  
+ 
+[debug] [2022-02-10T10:30:07.701Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:30:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/home/singh08prashant/Desktop/amigo/chat'...
+[info] 
+[debug] [2022-02-10T10:30:07.705Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amigochat89/webApps/-/config  
+ 
+[debug] [2022-02-10T10:30:08.872Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Feb 2022 10:30:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: ./public
+[info] ✔  hosting: Local server: http://localhost:5000

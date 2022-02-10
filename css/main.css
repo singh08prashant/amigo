@@ -19,12 +19,22 @@ body {
 }
 
 .container-fluid{
-  padding: 3%
+  padding: 2%
 }
 
 .home_container {
-  background-color: #FFC2C2;
   
+  padding: 1%;
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .about_container {
@@ -33,6 +43,7 @@ body {
 
 .benefits_container {
   background-color: #FFC2C2;
+  width: auto;
 }
 
 .footer_container {
@@ -73,4 +84,42 @@ body {
     60% {background-position: 60%;}
     75% {background-position: 40%;}
     100%  {background-position: 0 0;}
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

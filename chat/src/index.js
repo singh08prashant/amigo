@@ -1,18 +1,4 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 'use strict';
 
 import { initializeApp } from 'firebase/app';
@@ -49,20 +35,17 @@ import { getFirebaseConfig } from './firebase-config.js';
 
 // Signs-in Amigo Chat.
 async function signIn() {
-  // Sign in Firebase using popup auth and Google as the identity provider.
   var provider = new GoogleAuthProvider();
   await signInWithPopup(getAuth(), provider);
 }
 
 // Signs-out of Amigo Chat.
 function signOutUser() {
-  // Sign out of Firebase.
   signOut(getAuth());
 }
 
 // Initiate firebase auth
 function initFirebaseAuth() {
-  // Listen to auth state changes.
   onAuthStateChanged(getAuth(), authStateObserver);
 }
 
@@ -82,7 +65,6 @@ function isUserSignedIn() {
 
 // Saves a new message on the Cloud Firestore.
 async function saveMessage(messageText) {
-  // Add a new message entry to the Firebase database.
   try {
     await addDoc(collection(getFirestore(), 'messages'), {
       name: getUserName(),
@@ -96,12 +78,11 @@ async function saveMessage(messageText) {
   }
 }
 
-// Loads chat messages history and listens for upcoming ones.
+
 function loadMessages() {
-  // Create the query to load the last 12 messages and listen for new ones.
   const recentMessagesQuery = query(collection(getFirestore(), 'messages'), orderBy('timestamp', 'desc'), limit(12));
 
-  // Start listening to the query.
+
   onSnapshot(recentMessagesQuery, function(snapshot) {
     snapshot.docChanges().forEach(function(change) {
       if (change.type === 'removed') {
@@ -115,11 +96,11 @@ function loadMessages() {
   });
 }
 
-// Saves a new message containing an image in Firebase.
-// This first saves the image in Firebase storage.
+
+
 async function saveImageMessage(file) {
   try {
-    // 1 - We add a message with a loading icon that will get updated with the shared image.
+
     const messageRef = await addDoc(collection(getFirestore(), 'messages'), {
       name: getUserName(),
       imageUrl: LOADING_IMAGE_URL,
@@ -127,15 +108,15 @@ async function saveImageMessage(file) {
       timestamp: serverTimestamp()
     });
 
-    // 2 - Upload the image to Cloud Storage.
+
     const filePath = `${getAuth().currentUser.uid}/${messageRef.id}/${file.name}`;
     const newImageRef = ref(getStorage(), filePath);
     const fileSnapshot = await uploadBytesResumable(newImageRef, file);
 
-    // 3 - Generate a public URL for the file.
+
     const publicImageUrl = await getDownloadURL(newImageRef);
 
-    // 4 - Update the chat message placeholder with the image's URL.
+
     await updateDoc(messageRef,{
       imageUrl: publicImageUrl,
       storageUri: fileSnapshot.metadata.fullPath

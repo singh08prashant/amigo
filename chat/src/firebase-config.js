@@ -13,7 +13,8 @@ const config = {
   projectId: "amigochat89",
   storageBucket: "amigochat89.appspot.com",
   messagingSenderId: "440590514531",
-  appId: "1:440590514531:web:7d731f21fe9af636a97b56"
+  appId: "1:440590514531:web:7d731f21fe9af636a97b56",
+  measurementId: "G-Z406KY12F0"
 };
 
 export function getFirebaseConfig() {

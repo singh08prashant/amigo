@@ -48,7 +48,7 @@
             Get Started
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="login.html">Login</a>
+            <a class="dropdown-item" href="https://amigochat89.web.app">Login</a>
 
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Register</a>
@@ -68,14 +68,33 @@
       <div class="row">
 
         <div class="col-lg-6">
-          <h1>AMIGO</h1>
-          <h2>Your Second Self</h2>
-          <a href="login.html"><button type="button" class="btn btn-outline-light btn-lg">Login</button></a>
-          <button type="button" class="btn btn-outline-light btn-lg">Register</button>
+          <h1 style="text-align: center;">AMIGO - Your Second Self</h1>
+          <h2 style="text-align: center;">Support Chat Room</h2>
+          <h3 style="text-align: center;">For Everyone, Everywhere!</h3>
+          <br><br><br>
+          <div class="center">
+            <a href="https://amigochat89.web.app">
+              <button type="button" class="btn btn-outline-light btn-lg">Chat Now</button>
+            </a>
+          <button type="button" class="btn btn-outline-light btn-lg">Take Quiz</button>
+        </div>
         </div>
 
         <div class="col-lg-6">
-          <img src="assets/home.png" alt="app mockup"  height="400px"/>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="assets\motivation1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="assets\motivation2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="assets\motivation3.jpg" style="width:100%">
+            </div>
+          </div>
+          
         </div>
 
       </div>
@@ -91,10 +110,12 @@
 
     </div>
     <div id="benefit" class="benefits_container">
-      <p>
+      
 
-      </p>
+      
     </div>
+
+
   </div>
 
 
@@ -107,6 +128,24 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+   var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
+
 </body>
 
 

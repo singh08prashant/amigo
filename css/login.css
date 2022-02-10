@@ -140,3 +140,28 @@ padding-top: 40px;}
     width: 85vw;
   }
 }
+
+#nav1-login {
+	background-image: linear-gradient(to right, #054f7d,#00a7cf,#861a54,#054f7d);
+	background-size: 600%;
+  background-position: 0 0;
+  box-shadow: inset 0 0 5em rgba(0,0,0,.5);
+  display: flex;
+
+  
+  /* Animation */
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: gradients;
+
+}
+
+
+@keyframes gradients {
+    0%   {background-position: 0 0;}
+    25% {background-position: 50% 0;}
+    50% {background-position: 90% 0;}
+    60% {background-position: 60%;}
+    75% {background-position: 40%;}
+    100%  {background-position: 0 0;}
+}
